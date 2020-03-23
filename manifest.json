@@ -1,0 +1,26 @@
+{
+  "name": "VDO.AI Debug",
+  "description": "Checks for appropriate files needed for functionality of VDO.AI Player",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [ "storage", "tabs", "activeTab", "background", "webRequest", "<all_urls>"],
+  "browser_action": {
+    "default_icon": "fav.png",
+    "default_popup": "popup.html",
+    "js": ["popup.js", "background.js", "content.js"]
+   },
+   "icons": { "16": "fav.png",
+    "48": "fav.png",
+   "128": "fav.png" },
+   "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
+

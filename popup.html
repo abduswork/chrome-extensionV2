@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VDO.AI Extension</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h4>VDO.AI Status</h4>
+
+    <!--<h1 id="forcep" class="force" style="color: red; font-size: 20px">Force Play Called</h1>-->
+    <!--<h1 id="pagev" class="page" style="color: red; font-size: 20px">Page view Set</h1>-->
+    <!--<h1 id="videop" class="vid" style="color: red; font-size: 20px">Video Played</h1>-->
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Event</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody id="result">
+                <!-- tag -->
+            <tr>
+                <td>Tag Placed ?</td>
+                <td id="tag" class=""><span class="label label-success">404</span></td>
+            </tr>
+
+            <!-- files -->
+            <tr>
+                <td>vdo.ai.js Loaded</td>
+                <td id="vdoaijs" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+            <tr>
+                <td>vdo.min.js Loaded</td>
+                <td id="vdominjs" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+            <tr>
+                <td>vdo.min.css Loaded</td>
+                <td id="vdomincss" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+            <tr>
+                <td>adframe.js</td>
+                <td id="adframejs" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+
+           <!-- Events -->
+            <tr>
+                <td>initVdo Called</td>
+                <td id="init" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+            <tr>
+                <td>forceplay Called</td>
+                <td id="forcep" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+            <tr>
+                <td>pageview Called</td>
+                <td id="pagev" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+            <tr>
+                <td>video_loaded Called</td>
+                <td id="videoload" class=""><span class="label label-success">NOT YET</span></td>
+            </tr>
+        </tbody>
+            <!-- <tbody id="result"><tr>
+                <td>Files Loaded</td>
+                <td id="apicalls" class=""><span class="label label-danger">200</span></td>
+            </tr><tr>
+                <td>initVdo</td>
+                <td id="initvdo" class=""><span class="label label-danger">OK</span></td>
+            </tr><tr>
+                <td>forceplay</td>
+                <td id="forcep" class=""><span class="label label-danger">OK</span></td>
+            </tr><tr>
+                <td>pageview</td>
+                <td id="pagev" class=""><span class="label label-danger">OK</span></td>
+            </tr><tr>
+                <td>video_loaded</td>
+                <td id="videoload" class=""><span class="label label-danger">OK</span></td>
+            </tr>
+        </tbody> -->
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
